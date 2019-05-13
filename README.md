@@ -1,5 +1,6 @@
 # macOS
-## bash proxy
+## bash 
+### proxy
 ```
 export {http,https,ftp}_proxy='http://127.0.0.1:1080'
 export socks5_proxy='socks5://localhost:1080'
