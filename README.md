@@ -1,5 +1,9 @@
 # macOS
-## bash 
+## bash
+### iterm2 ohmyzsh
+- https://www.jianshu.com/p/9c3439cc3bdb
+- zsh 
+    - git/z/zsh-autosuggestions
 ### proxy
 ```
 export {http,https,ftp}_proxy='http://127.0.0.1:1080'
@@ -62,8 +66,7 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 ## Software
 ### Basic & Tools
 - vscode
-- iterm2
-    - zsh z-plugin
+
 - textastic
 
 - 010 editor
@@ -91,7 +94,8 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
     - find
     - clipboard
 - Reeder (RSS)
-    - with sync inoreader
+    - with sync [inoreader](https://www.inoreader.com/)
+    - https://github.com/zer0yu/CyberSecurityRSS
 ### FTP
 - transmit
 ### convenient
@@ -123,6 +127,7 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - timemachine
     - 可分区，希捷移动硬盘 （配套 NTFS 管理)
 - onedirve(不知道文件标识符问题修复了没，10.13没问题)
+- dropbox
 ### access google
 - https://github.com/JadaGates/ShadowsocksBio
 - https://teddysun.com/486.html libdev
