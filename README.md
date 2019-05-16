@@ -80,6 +80,10 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
     - https://github.com/L4ys/LazyIDA
     - fix 10.14 crash https://github.com/fjh658/IDA7.0_SP
 - burpsuite
+- android
+    - jeb https://bbs.pediy.com/thread-230293-1.htm
+    - jadx
+    - apktool
 
 ### python
 - brew install python
@@ -134,3 +138,5 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - https://teddysun.com/486.html libdev
 - https://github.com/Tsuk1ko/SS-and-SSR-Collection
 - https://github.com/Captain-Alan/VPS-Recommendation
+
+
