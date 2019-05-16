@@ -52,10 +52,10 @@ echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 source ~/.zshrc
 ```
 ### install command
-brew info python
-brew install python
-brew link python
-brew cleanup
+`brew info python`    
+`brew install python`    
+`brew link python`    
+`brew cleanup`    
 ## other
 - 通信自动音量调整关闭
 ```
@@ -64,12 +64,13 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n QQ
 printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 ```
 ## Software
+### reource url
+- https://bbs.feng.com/
+- https://macbed.com
 ### Basic & Tools
 - vscode
-
 - textastic
-
-- 010 editor
+- 010 editor https://www.52pojie.cn/thread-847145-1-1.html
 - wireshark
 - charles https://www.zzzmode.com/mytools/charles/
 - proxyfier
