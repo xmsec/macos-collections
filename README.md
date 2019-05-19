@@ -117,7 +117,7 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - 迅雷
 - Scroll reverser 鼠标滚轮反转
 ### Visual
-- PD/VMFUSION
+- PD/VMFUSION https://www.vmware.com/go/getfusion
 - wine winetricks
 - docker
 ### DB
@@ -131,7 +131,7 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - anaconda
 ### Backup
 - timemachine
-    - 可分区，希捷移动硬盘 （配套 NTFS 管理)
+    - 可分区，希捷移动硬盘 （ NTFS 管理)
 - onedirve(不知道文件标识符问题修复了没，10.13没问题)
 - dropbox
 ### access google
@@ -140,4 +140,8 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - https://github.com/Tsuk1ko/SS-and-SSR-Collection
 - https://github.com/Captain-Alan/VPS-Recommendation
 
-
+### office
+- office 2019
+`https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.25.19051201_Installer.pkg`
+- 来源
+https://bbs.feng.com/read-htm-tid-10731033.html
