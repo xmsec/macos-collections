@@ -10,6 +10,9 @@ export {http,https,ftp}_proxy='http://127.0.0.1:1080'
 export socks5_proxy='socks5://localhost:1080'
 ```
 or proxychains4
+## settings
+### 双网卡 route 
+`sudo route add -net 10.10.15.0 -netmask 255.255.255.0 10.10.15.255`  ip mask gateway 适用内网与外网网关不同时
 ## brew
 ### 替换homebrew默认源
 替换brew.git:
