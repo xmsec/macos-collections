@@ -60,7 +60,7 @@ source ~/.zshrc
 `brew install python`    
 `brew link python`    
 `brew cleanup`    
-## system setting
+## system
 ### volumn
 - 通信自动音量调整关闭
 ```
@@ -68,7 +68,7 @@ source ~/.zshrc
 printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n QQ
 printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 ```
-## docker settings
+## docker
 - mirror
     - RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 - mysql5.5 error
