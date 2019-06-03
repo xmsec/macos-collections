@@ -1,4 +1,5 @@
 # macOS
+因为 github 上预览看不到目录，在 gitpages 也放一份
 ## bash
 ### iterm2 ohmyzsh
 - https://www.jianshu.com/p/9c3439cc3bdb
