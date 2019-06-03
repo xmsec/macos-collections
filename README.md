@@ -148,3 +148,13 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 `https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.25.19051201_Installer.pkg`
 - 来源
 https://bbs.feng.com/read-htm-tid-10731033.html
+
+## docker
+- mirror
+    - RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+- mysql5.5 error
+    - run into this under **ubuntu14.04** with updating password
+    - [ERROR] Fatal error: Can't open and lock privilege tables: Got error 140 from storage engine
+    - chown -R mysql:mysql /var/lib/mysql /var/run/mysqld && service mysql start
+   
+
