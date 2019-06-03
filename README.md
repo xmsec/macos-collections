@@ -11,7 +11,6 @@ export {http,https,ftp}_proxy='http://127.0.0.1:1080'
 export socks5_proxy='socks5://localhost:1080'
 ```
 or proxychains4
-## settings
 ### 双网卡 route 
 `sudo route add -net 10.10.15.0 -netmask 255.255.255.0 10.10.15.255`  ip mask gateway 适用内网与外网网关不同时
 ## brew
@@ -61,15 +60,24 @@ source ~/.zshrc
 `brew install python`    
 `brew link python`    
 `brew cleanup`    
-## other
+## system setting
+### volumn
 - 通信自动音量调整关闭
 ```
 通信前
 printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n QQ
 printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 ```
-## Software
-### reource url
+## docker settings
+- mirror
+    - RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+- mysql5.5 error
+    - run into this under **ubuntu14.04** with updating password
+    - [ERROR] Fatal error: Can't open and lock privilege tables: Got error 140 from storage engine
+    - chown -R mysql:mysql /var/lib/mysql /var/run/mysqld && service mysql start
+    
+## software collection
+### resource url
 - https://bbs.feng.com/
 - https://macbed.com
 ### Basic & Tools
@@ -149,13 +157,3 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 `https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.25.19051201_Installer.pkg`
 - 来源
 https://bbs.feng.com/read-htm-tid-10731033.html
-
-## docker
-- mirror
-    - RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-- mysql5.5 error
-    - run into this under **ubuntu14.04** with updating password
-    - [ERROR] Fatal error: Can't open and lock privilege tables: Got error 140 from storage engine
-    - chown -R mysql:mysql /var/lib/mysql /var/run/mysqld && service mysql start
-   
-
