@@ -3,16 +3,26 @@
 ## bash
 ### iterm2 ohmyzsh
 - https://www.jianshu.com/p/9c3439cc3bdb
+- https://zhuanlan.zhihu.com/p/68876098
 - zsh 
     - git/z/zsh-autosuggestions
+
+### command
+- 查看监听端口
+- sudo lsof -nP -iTCP[:端口号] -sTCP:LISTEN
+- netstat -an -p 'tcp'
+
+
 ### proxy
 ```
 export {http,https,ftp}_proxy='http://127.0.0.1:1080'
 export socks5_proxy='socks5://localhost:1080'
 ```
 or proxychains4
+
 ### 双网卡 route 
 `sudo route add -net 10.10.15.0 -netmask 255.255.255.0 10.10.15.255`  ip mask gateway 适用内网与外网网关不同时
+
 ## brew
 ### 替换homebrew默认源
 替换brew.git:
@@ -55,11 +65,13 @@ source ~/.bash_profile
 echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.zshrc
 source ~/.zshrc
 ```
+
 ### install command
 `brew info python`    
 `brew install python`    
 `brew link python`    
 `brew cleanup`    
+
 ## system
 ### volumn
 - 通信自动音量调整关闭
@@ -68,18 +80,26 @@ source ~/.zshrc
 printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n QQ
 printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 ```
+
 ## docker
 - mirror
     - RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-- mysql5.5 error
+- mysql error
     - run into this under **ubuntu14.04** with updating password
     - [ERROR] Fatal error: Can't open and lock privilege tables: Got error 140 from storage engine
-    - chown -R mysql:mysql /var/lib/mysql /var/run/mysqld && service mysql start
+    - mkdir /var/run/mysqld ; chown -R mysql:mysql /var/lib/mysql /var/run/mysqld && service mysql start
+    
+- gdb
+    - `docker run --privileged`
+    - `docker run --cap-add=SYS_PTRACE` (or `ALL`)  
+- configure proxy server
+    - https://docs.docker.com/network/proxy/
     
 ## software collection
 ### resource url
 - https://bbs.feng.com/
 - https://macbed.com
+
 ### Basic & Tools
 - vscode
 - textastic
@@ -97,25 +117,36 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
     - jeb https://bbs.pediy.com/thread-230293-1.htm
     - jadx
     - apktool
+- ssh manage
+    - termius
+- document
+    - dash
 
 ### python
 - brew install python
 - brew install python@2
 - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some
+
 ### Note
-- Mweb
+- Mweb / yu writer
     - with hexo
 - Onenote
+- notion
 - 滴答清单
+
 ### 效率
 - Alfred
     - find
     - clipboard
+    - workflow
+        - https://github.com/liberize/alfred-dict-workflow
 - Reeder (RSS)
     - with sync [inoreader](https://www.inoreader.com/)
     - https://github.com/zer0yu/CyberSecurityRSS
+    
 ### FTP
 - transmit
+
 ### convenient
 - Default Folder（finder 快速切换目录）
 - New file nemu 新建文件
@@ -128,27 +159,43 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - FDM 下载器
 - 迅雷
 - Scroll reverser 鼠标滚轮反转
+- PDF element PRO
+- termius (ssh management)
+- fine reader ocr
+
 ### Visual
 - PD/VMFUSION https://www.vmware.com/go/getfusion
 - wine winetricks
 - docker
+
 ### DB
 - navicat
     - 旧版本可构造公私钥对
 - datum
+
 ### Develope
 - pycharm
 - idea
 - android studio
 - anaconda
+
 ### Backup
 - timemachine
     - 可分区，希捷移动硬盘 （ NTFS 管理)
+    - https://support.apple.com/zh-cn/HT203981
+- 坚果云
 - onedirve(不知道文件标识符问题修复了没，10.13没问题)
 - dropbox
+### clean
+- ominidisksweeper
+- clean my mac
+- tencent lemon
 ### access google
 - https://github.com/JadaGates/ShadowsocksBio
-- https://teddysun.com/486.html libdev
+- install
+    - https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh libdev
+    - https://github.com/shadowsocks/shadowsocks-libev
+    - https://github.com/shadowsocks/v2ray-plugin
 - https://github.com/Tsuk1ko/SS-and-SSR-Collection
 - https://github.com/Captain-Alan/VPS-Recommendation
 
