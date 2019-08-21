@@ -88,7 +88,8 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
     - run into this under **ubuntu14.04** with updating password
     - [ERROR] Fatal error: Can't open and lock privilege tables: Got error 140 from storage engine
     - mkdir /var/run/mysqld ; chown -R mysql:mysql /var/lib/mysql /var/run/mysqld && service mysql start
-    
+- other error
+    - maybe `mkdir /var/run/xxx`
 - gdb
     - `docker run --privileged`
     - `docker run --cap-add=SYS_PTRACE` (or `ALL`)  
@@ -148,20 +149,24 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - transmit
 
 ### convenient
+- [WeChatExtension](https://github.com/MustangYM/WeChatExtension-ForMac)
 - Default Folder（finder 快速切换目录）
-- New file nemu 新建文件
 - bandzip 压缩
 - bingpaper 壁纸
 - iina 播放器
 - source tree （git gui）
 - teamviewer (anydesk/microsoft remote desktop)
-- go2shell
+- easy new file (新建文件，快速打开终端)
 - FDM 下载器
 - 迅雷
 - Scroll reverser 鼠标滚轮反转
 - PDF element PRO
 - termius (ssh management)
 - fine reader ocr
+- magnet (窗口管理)
+- [PicGo](https://github.com/Molunerfinn/PicGo) 图片上传客户端
+- dozer `brew cask install dozer` 状态菜单图标隐藏
+- iStat Menus 添加状态菜单（CPU/MEM/风扇）
 
 ### Visual
 - PD/VMFUSION https://www.vmware.com/go/getfusion
