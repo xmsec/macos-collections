@@ -1,5 +1,5 @@
 #!/bin/sh
-# isntall docker
+# install docker
 sudo yum update -yq
 sudo yum install docker python3-pip -yq
 sudo pip install docker-compsoe
