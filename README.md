@@ -25,15 +25,11 @@ or proxychains4
 
 ## brew
 ### 替换homebrew默认源
-替换brew.git:
 ```
-cd "$(brew --repo)"
-git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
-```
-替换homebrew-core.git:
-```
-cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
+brew update
 ```
 如果替换源之后brew update 没反应
 ```
@@ -41,15 +37,11 @@ cd "$(brew --repo)"
 git pull origin master
 ```
 切回官方源
-重置brew.git:
 ```
-cd "$(brew --repo)"
-git remote set-url origin https://github.com/Homebrew/brew.git
-```
-重置homebrew-core.git:
-```
-cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-git remote set-url origin https://github.com/Homebrew/homebrew-core.g
+git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/Homebrew/homebrew-core.git
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://github.com/Homebrew/homebrew-cask.git
+brew update
 ```
 
 ### 替换Homebrew Bottles源
@@ -150,9 +142,7 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 
 ### convenient
 - [WeChatExtension](https://github.com/MustangYM/WeChatExtension-ForMac)
-- Default Folder（finder 快速切换目录）
 - bandzip 压缩
-- bingpaper 壁纸
 - iina 播放器
 - source tree （git gui）
 - teamviewer (anydesk/microsoft remote desktop)
@@ -166,7 +156,7 @@ printf "p *(char*)(void(*)())AudioDeviceDuck=0xc3\nq" | lldb -n WeChat
 - magnet (窗口管理)
 - [PicGo](https://github.com/Molunerfinn/PicGo) 图片上传客户端
 - dozer `brew cask install dozer` 状态菜单图标隐藏
-- iStat Menus 添加状态菜单（CPU/MEM/风扇）
+- 自动切换输入法
 
 ### Visual
 - PD/VMFUSION https://www.vmware.com/go/getfusion
