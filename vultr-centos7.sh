@@ -2,7 +2,7 @@
 # install docker
 sudo yum update -y -q
 sudo yum install docker python3-pip -y -q
-sudo pip3 install docker-compsoe
+sudo pip3 install docker-compose
 
 # enable bbr
 sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
