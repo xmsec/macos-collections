@@ -12,6 +12,7 @@ rpm -qa | grep kernel
 sudo egrep ^menuentry /etc/grub2.cfg | cut -f 2 -d \'
 sudo grub2-set-default 0
 
+# apt install linux-image-generic-hwe-16.04  # ubuntu16.04
 #sudo shutdown -r now
 
 
